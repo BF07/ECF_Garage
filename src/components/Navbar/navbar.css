@@ -1,0 +1,122 @@
+
+/* Mobile */
+
+.navbar-desktop {
+    display: none;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgb(10, 10, 10);
+    z-index: 998;
+}
+
+.logo {
+    width: 75px;
+    cursor: pointer;
+}
+
+.nav-icons {
+    display: flex;
+    grid-column-gap: 15px;
+    align-items: center;
+}
+
+.search-font {
+    cursor: pointer;
+}
+
+.burger-font {
+    cursor: pointer;
+}
+
+.burger-sideBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+}
+
+/* Responsive (Tablet) */
+
+
+/* Responsive (Desktop) */
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 15px;
+    }
+
+    .navbar-desktop {
+        width: 100vw;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid rgb(10, 10, 10);
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .nav-search-user {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .input-class {
+        visibility: hidden;
+        display: none;
+    }
+
+    .search-font {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .nav-search-user {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .input-class {
+        visibility: visible;
+        display: block;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgb(247, 247, 247);
+    }
+
+    .search-font {
+        display: none;
+    }
+}
