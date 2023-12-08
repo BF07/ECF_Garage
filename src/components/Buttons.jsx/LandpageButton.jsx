@@ -3,12 +3,12 @@ import ClioIV from "../../assets/Images/ClioIV.jpg"
 import MercedesCLA from "../../assets/Images/mercedesCLA-image1.jpg"
 import JaguarXF from "../../assets/Images/JaguarXF-image2.jpg"
 
-export default function LandpageButton ({onChangeBackground}) {
+export default function LandpageButton ({onChangeBackground, onChangeTitle}) {
 
     const variants = [
-        {text: 'Voir notre Clio IV', image: ClioIV},
-        {text: 'Voir notre Mercedes CLA', image: MercedesCLA},
-        {text: 'Voir notre Jaguar XF', image: JaguarXF}
+        {text: 'Voir notre Clio IV', image: ClioIV, href: ''},
+        {text: 'Voir notre Mercedes CLA', image: MercedesCLA, href: ''},
+        {text: 'Voir notre Jaguar XF', image: JaguarXF, href: ''}
     ]
     
     const [variantIndex, setVariantIndex] = useState(0);
@@ -18,11 +18,12 @@ export default function LandpageButton ({onChangeBackground}) {
             const nextIndex = (variantIndex + 1) % variants.length;
             setVariantIndex(nextIndex);
             onChangeBackground(nextIndex)
+            onChangeTitle(nextIndex)
         }, 5000);
 
         return () => clearTimeout(timeout);
-    }, [variantIndex ,onChangeBackground, variants]);
+    }, [variantIndex ,onChangeBackground, onChangeTitle, variants]);
 
-    return <button className="newCar-btn">{variants[variantIndex].text}</button>
+    return <button className="newCar-btn" onClick={() => window.location.href = variants[variantIndex].href}>{variants[variantIndex].text}</button>
 
 }
