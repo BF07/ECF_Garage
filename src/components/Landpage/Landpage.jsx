@@ -6,6 +6,7 @@ import MercedesCLA from "../../assets/Images/mercedesCLA-image1.jpg"
 import JaguarXF from "../../assets/Images/JaguarXF-image2.jpg"
 
 
+
 export default function Landpage () {
 
   const variantsImages = [
@@ -51,7 +52,6 @@ export default function Landpage () {
 
   const loadTitle = (title) => {
     return new Promise((resolve) => {
-      console.log(`Titre chargé : ${title}`);
       resolve();
     });
   };
@@ -59,18 +59,47 @@ export default function Landpage () {
 
     return (
       <>
-        <main>
-          <div className="sales-car" style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${variantsImages[backgroundIndex].image})`}}>
+        {/* Mobile */}
+        <main className="main-mobile">
+          <div
+            className="sales-car"
+            style={{
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${variantsImages[backgroundIndex].image})`,
+              transition: `background-image 0.5 ease`,
+            }}
+          >
+            <div className="menu-salesCar-mobile">
+              <p className="new-cars">Nouveautés en stock</p>
+              <h1 className="sales-carTitle">
+                {variantsTitles[switchTitleIndex].title}
+              </h1>
+                <Button
+                  onChangeBackground={changeBackground}
+                  onChangeTitle={changeTitle}
+                />
+            </div>
+          </div>
+        </main>
+
+        {/*Desktop Version */}
+        <main className="main-desktop">
+          <div
+            className="sales-car"
+            style={{
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${variantsImages[backgroundIndex].image})`,
+              transition: `background-image 0.5 ease`,
+            }}
+          >
             <div className="menu-salesCar">
               <p className="new-cars">Nouveautés en stock</p>
               <h1 className="sales-carTitle">
                 {variantsTitles[switchTitleIndex].title}
               </h1>
-              <div className="cta-salesCar">
-                <button className="occas-btn">Nos occasions</button>
-                <Button onChangeBackground={changeBackground} onChangeTitle={changeTitle} />
-              </div>
             </div>
+              <Button
+                onChangeBackground={changeBackground}
+                onChangeTitle={changeTitle}
+              />
           </div>
         </main>
       </>
