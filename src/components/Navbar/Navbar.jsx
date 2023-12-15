@@ -2,7 +2,6 @@ import parrotLogo from "../../assets/Images/logo.png"
 import "../../index.css"
 import "./navbar.css"
 import { useRef, useState } from "react"
-import styled from "styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faBarsStaggered, faMagnifyingGlass, faXmark } from '@fortawesome/free-solid-svg-icons'
 import Input from "./Input"
