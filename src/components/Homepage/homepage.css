@@ -1,5 +1,9 @@
 body {
     min-height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    box-sizing: border-box;
 }
 
 /* First Section */
@@ -125,6 +129,13 @@ body {
     display: none;
 }
 
+/* Classe transition changement texte et image */
+
+.sales-car, .sales-carTitle, .newCar-btn {
+    transition: background-image 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+
 /* Second Section About us */
 .about-us-section {
     padding-top: 60px;
@@ -218,20 +229,22 @@ body {
 
 .contact-btn:hover {
     background-color: #9a0f39;
-    transition: background-color 0.4s ease-in-out;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
 }
 
 /* Third Section Services */
 
 .services-section {
     padding: 60px 0;
+    position: relative;
 }
 
 .services-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-row-gap: 50px;
+    position: relative;
 }
 
 .services-scroll {
@@ -239,12 +252,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 70px;
 }
 
 .services-scroll h2 {
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
     line-height: 1.2em;
     margin-top: 10px;
@@ -271,10 +285,14 @@ body {
     line-height: 1.5em;
 }
 
+.services-btn:hover {
+    background-color: #9a0f39;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
 .card-services-wrapper {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .list-services {
@@ -290,10 +308,81 @@ body {
     padding: 0 20px;
 }
 
+.service-content {
+    display: flex;
+    flex-direction: column;
+    grid-column-gap: 30px;
+    position: relative;
+}
+
+.list .service-image {
+    height: 300px;
+    min-height: auto;
+    margin-bottom: 20px;
+}
+
 .list img {
     width: 100%;
-    margin-right: auto;
+    height: 100%;
+    max-width: 100vw;
+    object-fit: cover;
     margin-left: auto;
+    margin-right: auto;
+}
+
+.service-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.service-description .service-link {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.service-description .service-link:hover {
+    color: #9a0f39;
+    transition: color 0.4s ease-in-out;
+}
+
+.service-description .paragraph-link {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.link-with-line {
+    position: relative;
+}
+
+.link-with-line .link-line {
+    font-family: 'Anton', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1.2em;
+    display: inline-block;
+}
+
+.link-with-line .link-line:hover {
+    color: #9a0f39;
+    transition: color 0.4s ease-in-out;
+}
+
+.link-with-line .red-line {
+    width: 180px;
+    height: 4px;
+    background-color: #9a0f39;
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -327,6 +416,20 @@ body {
         gap: 30px;
         margin-top: 40px;
         padding-left: 50px;
+    }
+
+    .service-content {
+        flex-direction: row;
+    }
+
+    .service-image {
+        width: 270px;
+        min-height: 370px;
+        flex: none;
+    }
+
+    .list img {
+        max-width: 96vw;
     }
 }
 
@@ -412,11 +515,36 @@ body {
     .about-btn-wrapper {
         justify-content: flex-start;
     }
+
+    /* Third Section Services */
+    .services-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .services-scroll {
+        max-width: 325px;
+        flex: none;
+        position: sticky;
+        top: 110px;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+
+    .services-scroll h2 {
+        font-size: 40px;
+    }
+
+    .services-scroll p {
+        text-align: left;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    
+    .list img {
+        max-width: 270px;
+    }
+
 }
 
-/* Classe transition changement texte et image */
-
-.sales-car, .sales-carTitle, .newCar-btn {
-    transition: background-image 0.5s ease, color 0.5s ease, transform 0.5s ease;
-}
 

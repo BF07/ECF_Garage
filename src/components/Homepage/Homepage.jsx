@@ -9,8 +9,12 @@ import MercedesCLA from "../../assets/Images/mercedesCLA-image1.jpg"
 import JaguarXF from "../../assets/Images/JaguarXF-image2.jpg"
 import About from "../../assets/Images/about.jpg"
 import Mecanique from "../../assets/Images/mecanique.jpg"
+import Entretien from "../../assets/Images/entretien.jpg"
+import Carrosserie from "../../assets/Images/carrosserie.jpg"
+import Occasion from "../../assets/Images/sell-car.jpg"
 
 import "@fontsource/anton"
+import "@fontsource/inter"
 
 
 
@@ -137,21 +141,102 @@ export default function Homepage () {
               <div className="card-services-wrapper">
                 <div className="list-services">
                   <div className="list">
-                    <a href="">
-                      <img src={Mecanique} alt="" />
-                    </a>
-                    <div className="service-description">
-                      <a href="">Mécanique</a>
-                      <p>
-                        Un problème avec votre véhicule ? Notre équipe d'experts
-                        est à votre écoute. De la recherche à la réparation,
-                        nous vous garantissons une entière satisfaction ! 
-                      </p>
+                    <div className="service-content">
+                      <a href="" className="service-image">
+                        <img src={Occasion} alt="" />
+                      </a>
+                      <div className="service-description">
+                        <a href="" className="service-link">
+                          Véhicules d'occasions
+                        </a>
+                        <p className="paragraph-link">
+                          Besoin d'un nouveau bolide ? Venez voir nos véhicules
+                          disponibles pour tout budget ! Toutes nos voitures
+                          d'occasions sont vérifiées et remise à neuve pour
+                          vous. Nous vous proposons des voitures d'occasions
+                          plus neuve que jamais !
+                        </p>
+                        <div className="link-with-line">
+                          <a href="" className="link-line">
+                            Voir en détails
+                          </a>
+                          <div className="red-line"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div className="list"></div>
-                  <div className="list"></div>
-                  <div className="list"></div>
+                  <div className="list">
+                    <div className="service-content">
+                      <a href="" className="service-image">
+                        <img src={Entretien} alt="" />
+                      </a>
+                      <div className="service-description">
+                        <a href="" className="service-link">
+                          Entretien
+                        </a>
+                        <p className="paragraph-link">
+                          Chez V.PARROT, nous nous occupons de l'entretien
+                          complet de votre véhicule. Vidange, changement des
+                          filtres, pneus, disques, plaquettes... Votre sécurité
+                          est notre priorité !
+                        </p>
+                        <div className="link-with-line">
+                          <a href="" className="link-line">
+                            Voir en détails
+                          </a>
+                          <div className="red-line"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="list">
+                    <div className="service-content">
+                      <a href="" className="service-image">
+                        <img src={Mecanique} alt="" />
+                      </a>
+                      <div className="service-description">
+                        <a href="" className="service-link">
+                          Mécanique
+                        </a>
+                        <p className="paragraph-link">
+                          Un problème avec votre véhicule ? Notre équipe
+                          d'experts est à votre écoute. De la recherche à la
+                          réparation, nous vous garantissons une entière
+                          satisfaction !
+                        </p>
+                        <div className="link-with-line">
+                          <a href="" className="link-line">
+                            Voir en détails
+                          </a>
+                          <div className="red-line"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="list">
+                    <div className="service-content">
+                      <a href="" className="service-image">
+                        <img src={Carrosserie} alt="" />
+                      </a>
+                      <div className="service-description">
+                        <a href="" className="service-link">
+                          Carrosserie
+                        </a>
+                        <p className="paragraph-link">
+                          Un impact, une rayure ? Votre carrosserie est enfoncée
+                          suite à un choc ? Encore une fois, vous pouvez compter
+                          sur notre équipe ! Notre polyvalence est notre atout
+                          principal pour vous satisfaire !
+                        </p>
+                        <div className="link-with-line">
+                          <a href="" className="link-line">
+                            Voir en détails
+                          </a>
+                          <div className="red-line"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
