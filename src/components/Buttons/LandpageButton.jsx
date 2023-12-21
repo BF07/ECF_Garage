@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useMemo, useState } from "react"
 import ClioIV from "../../assets/Images/ClioIV.jpg"
 import MercedesCLA from "../../assets/Images/mercedesCLA-image1.jpg"
 import JaguarXF from "../../assets/Images/JaguarXF-image2.jpg"
