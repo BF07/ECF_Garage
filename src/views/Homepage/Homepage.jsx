@@ -17,6 +17,9 @@ import Occasion from "../../assets/Images/sell-car.jpg"
 import "@fontsource/anton"
 import "@fontsource/inter"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+
 
 
 
@@ -248,7 +251,19 @@ export default function Homepage () {
           </section>
 
           <section className="notice-section">
-              
+            <p>
+              Notre gage de qualité ? Vos retours ! Nos clients ont laissé leurs
+              avis, regardez les et choisissez de nous faire confiance !
+            </p>
+            <div className="notice-wrapper">
+              <div className="notice-content">
+                <FontAwesomeIcon icon={faArrowLeft} />
+                <div className="notice-card">
+                  
+                </div>
+                <FontAwesomeIcon icon={faArrowRight} />
+              </div>
+            </div>
           </section>
         </main>
 

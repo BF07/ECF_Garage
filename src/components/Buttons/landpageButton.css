@@ -1,0 +1,111 @@
+/* Mobile Version */
+
+.cta-salesCar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.occas-btn {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000;
+    padding: 18px 24px;
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    transition: all 0.4s ease-in-out;
+}
+
+.occas-btn:hover {
+    background-color: #9a0f39;
+    border-color: #9a0f39;
+    color: #fff;
+}
+
+.newCar-btn {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 18px 24px;
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+}
+
+.newCar-btn:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s;
+}
+
+.arrows {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    padding-left: 30px;
+    gap: 50px;
+    color: #fff;
+}
+
+
+.arrows .right {
+    cursor: pointer;
+}
+
+.arrows .right:hover {
+    color: #9a0f39;
+    transition: color 0.3s ease-in-out;
+}
+
+.arrows .left {
+    cursor: pointer;
+}
+
+.arrows .left:hover {
+    color: #9a0f39;
+    transition: color 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 480px) {
+
+.cta-salesCar {
+    display: flex;
+    flex-direction: row;
+}
+
+.arrows .right {
+    font-size: 24px;
+}
+
+.arrows .left {
+    font-size: 24px;
+}
+}
+
+/* Desktop Version */ 
+
+@media screen and (min-width: 778px) {
+    .cta-salesCar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 40px;
+        padding-left: 50px;
+    }
+}
+
+@media screen and (min-width: 994px) {
+    .cta-salesCar {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 50px;
+        padding-left: 50px;
+    }
+}
