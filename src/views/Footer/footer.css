@@ -1,100 +1,51 @@
 footer {
-    background-color: #e8e8e8;
-}
-
-.footer-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 30px;
-}
-
-.footer-wrapper h3 {
-    margin-bottom: 40px;
-}
-
-.avis-form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.title-avis-form {
-    font-family: 'Anton', sans-serif;
-    font-size: 36px;
-    font-weight: 300;
-}
-
-.form-container {
-    border: 1px solid #fff;
     background-color: #0e0e0e;
-    box-shadow: 5px 5px 7px 7px rgba(0,0,0,0.4);
-    padding: 50px;
 }
 
-.form-user-name {
-    display: flex;
-    gap: 60px;
-    margin-bottom: 40px;
-}
-
-.form-user-name input{
-    background-color: #212121;
-    color: #fff;
-}
-
-textarea {
-    background-color: #212121;
-    color: #fff;
-    margin-bottom: 40px;
-}
-
-.form-user-note {
-    background-color: #212121;
-    color: #fff;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-}
-
-.form-button {
-    background-color: #9a0f39;
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    border: 1px solid #9a0f39;
-    padding: 10px 10px;
-}
-
-.contact-container {
+.footer-top-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 20px;
 }
 
-.contact-container .title-contact {
-    font-family: 'Anton', sans-serif;
-    font-size: 36px;
-    font-weight: 300;
-}
-
-.contact-container .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.contact .adress, .tel, .form-contact {
+.footer-top-wrapper h3 {
+    margin-bottom: 40px;
+    color: #fff;
     border-bottom: 1px solid #9a0f39;
 }
 
+.avis-btn-mobile {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.avis-btn-mobile button {
+    background-color: #9a0f39;
+    color: #fff;
+    border: 1px solid #9a0f39;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 24px;
+}
+
+.avis-btn-mobile button:hover {
+    background-color: #fff;
+    color: #9a0f39;
+    transition: all 0.4s ease-in-out;
+}
+
+.avis-form-container {
+    display: none;
+}
+    
 .opening-days {
     display: block;
 }
-
+    
 .opening-days .schedule {
     font-family: 'Anton', sans-serif;
     font-weight: 300;
@@ -110,24 +61,304 @@ table thead {
     font-family: 'Anton', sans-serif;
     font-weight: 300;
 }
-
+    
 thead tr {
     margin-bottom: 20px;
 }
-
+    
 table th {
     padding-right: 30px;
+    color: #fff;
 }
-
+    
 table .tr-open-close {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
-
+    
 table tr {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 30px;
     align-items: center;
+    color: #fff;
 }
+
+.info-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 40px;
+}
+
+.footer-logo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+}
+
+.logo {
+    width: 75px;
+    cursor: pointer;
+}
+
+.footer-bottom-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-column-gap: 80px;
+    margin-bottom: 50px;
+}
+
+.footer-contact {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-contact-element {
+    color: #afafaf;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.footer-contact-element:hover {
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.icon {
+    color: #fff;
+    padding-right: 10px;
+}
+
+.footer-social-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer-social-wrapper .icon {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-social-wrapper .icon:hover {
+    color: #9a0f39;
+    transition: all .3s;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-services-wrapper, .footer-company-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-services-wrapper h4, .footer-company-wrapper h4 {
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2em;
+} 
+
+.footer-services-wrapper a, .footer-company-wrapper a {
+    color: #afafaf;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-services-wrapper a:hover, .footer-company-wrapper a:hover {
+    color: #fff;
+    transition: all 0.3s;
+} 
+
+@media screen and (min-width: 460px) {
+    .opening-days {
+        max-width: none;
+    }  
+}
+
+/* Desktop Version */
+
+@media screen and (min-width: 994px) {
+    .footer-top-wrapper {
+        flex-direction: row;
+        align-items: normal;
+    }
+
+    .avis-btn-mobile {
+        display: none;
+    }
+    
+    .avis-form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .title-avis-form {
+        font-family: 'Anton', sans-serif;
+        font-size: 36px;
+        font-weight: 300;
+    }
+    
+    .form-container {
+        border: 1px solid #fff;
+        border-radius: 10px;
+        background-color: #212121;
+        box-shadow: 5px 5px 7px 7px rgba(0,0,0,0.4);
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .form-user-name {
+        display: flex;
+        gap: 60px;
+        margin-bottom: 40px;
+    }
+    
+    .form-user-name input{
+        background-color: #0e0e0e;
+        color: #fff;
+        border-radius: 10px;
+    }
+    
+    textarea {
+        background-color: #0e0e0e;
+        color: #fff;
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+    
+    .form-user-note {
+        background-color: #0e0e0e;
+        color: #fff;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+    
+    .form-button {
+        background-color: #9a0f39;
+        color: #fff;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        border: 1px solid #9a0f39;
+        padding: 10px 10px;
+    }
+    
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-container .title-contact {
+        font-family: 'Anton', sans-serif;
+        font-size: 36px;
+        font-weight: 300;
+    }
+    
+    .contact-container .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .contact .form-contact {
+        background-color: #9a0f39;
+        color: #fff;
+        padding: 5px 10px;
+        border: 1px solid #9a0f39;
+        border-radius: 20px;
+    }
+    
+    .opening-days .schedule {
+        font-family: 'Anton', sans-serif;
+        font-weight: 300;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .info-footer {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+
+    .footer-logo-wrapper {
+        justify-content: space-between;
+    }
+
+    .footer-bottom-wrapper {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .footer-contact {
+        align-items: flex-start;
+        padding-right: 30px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        border: none;
+    }
+
+    .footer-contact-element {
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        grid-column-gap: 10px;
+    }
+
+    .footer-social-wrapper {
+        display: block;
+    }
+
+    .footer-links {
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .footer-company-wrapper {
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
